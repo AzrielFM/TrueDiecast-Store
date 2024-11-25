@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "hotwheels-store-80d53",
+    "production": "hotwheels-store-80d53"
+  },
+  "targets": {},
+  "etags": {}
+}

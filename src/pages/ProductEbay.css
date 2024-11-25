@@ -1,0 +1,69 @@
+.productDetailEbay {
+    background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202403/2713/377c9c038c0cae88565f80d0c85aef1a0d3fbeb9853ccf6e.jpg');
+    background-size: cover; /* Agar gambar menyesuaikan ukuran layar */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-repeat: no-repeat; /* Jangan ulang gambar */
+    min-height: 100vh; /* Pastikan elemen mencakup seluruh viewport */
+    padding: 20px; /* Tambahkan padding agar konten tidak terlalu mepet */
+    color: white; /* Pastikan teks terlihat jelas di atas gambar */
+    border-radius: 20px;
+  }
+  
+  .productCard {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .productCard img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .productCard h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  /* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  /* Tambahkan media query untuk layar kecil */
+@media (max-width: 768px) {
+    .productCard {
+      width: 90%; /* Atur width agar sesuai dengan layar kecil */
+      margin: 0 auto; /* Tambahkan margin agar terpusat */
+    }
+    
+    .productCard img {
+      max-width: 100%; /* Pastikan gambar tidak melebihi lebar container */
+      height: auto; /* Pertahankan rasio aspek gambar */
+    }
+    
+    .productDetailEbay {
+      padding: 10px; /* Kurangi padding untuk layar kecil */
+    }
+    
+    h2 {
+      font-size: 18px; /* Sesuaikan ukuran font untuk layar kecil */
+    }
+  }
+  
+  

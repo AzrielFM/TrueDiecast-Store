@@ -1,0 +1,57 @@
+/* BestSellers.css */
+.productDetailEbay {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .productCard {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .productCard img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .productCard h3 {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  /* Tambahkan media query untuk layar kecil */
+@media (max-width: 768px) {
+    .productCard {
+        width: 50%; /* Buat elemen memenuhi hampir seluruh layar */
+    }
+    
+    .productDetailEbay {
+        padding: 10px; /* Sesuaikan padding untuk layar kecil */
+    }
+
+    h2 {
+        font-size: 18px; /* Sesuaikan ukuran font */
+    }
+}
+  
+  

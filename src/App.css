@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header styles */
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #0097f5;
+  padding: 5px 20px; /* Tambahkan padding atas/bawah */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px; /* Jarak dengan elemen navbar */
+  padding-bottom: 10px; /* Tambahkan jarak bawah */
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #0097f5;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Contact page */
+.contact {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo-container {
+    margin-bottom: 0;
   }
+
+  .nav-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+
+
+  .header h1 {
+    font-size: 20px;
+    padding-bottom: 5px; /* Jarak bawah lebih kecil untuk layar kecil */
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .contact {
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
 }

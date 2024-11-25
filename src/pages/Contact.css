@@ -1,0 +1,11 @@
+.contact-container {
+    padding: 20px;
+    background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202403/2713/377c9c038c0cae88565f80d0c85aef1a0d3fbeb9853ccf6e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Teks kontras */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
